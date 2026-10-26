@@ -1,0 +1,37 @@
+<!doctype html><html lang="lt"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>ltu-oracle</title>
+<style>
+:root{--bg:#f6f8f6;--fg:#0b0f0c;--dim:#5b6b60;--acc:#008a37;--card:#fff;--line:#d8e0da}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0b0f0c;--fg:#d8f5e1;--dim:#7d9686;--acc:#00e05a;--card:#121915;--line:#1f2b24}}
+:root[data-theme=dark]{--bg:#0b0f0c;--fg:#d8f5e1;--dim:#7d9686;--acc:#00e05a;--card:#121915;--line:#1f2b24}
+body{background:var(--bg);color:var(--fg);font:15px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;margin:0;padding:24px 16px;max-width:1100px;margin:auto}
+header{display:flex;gap:14px;align-items:center} header svg{width:52px;height:52px;flex:none}
+h1{font-size:22px;margin:0} h3{font-size:15px;margin:0 0 6px} .dim{color:var(--dim);font-size:13px}
+.stats{display:flex;gap:18px;flex-wrap:wrap;margin:16px 0 22px} .stats b{color:var(--acc);font-size:20px;display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px}
+article{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px;min-width:0;overflow-wrap:anywhere}
+ul{padding-left:18px;margin:8px 0 0} li{margin:3px 0;font-size:13px}
+.spark{width:100%;height:48px} .l{fill:none;stroke:var(--dim);stroke-width:1.5} .f{stroke:var(--acc);stroke-dasharray:3 2;stroke-width:1.5} .p{fill:var(--acc)}
+.ok{color:var(--acc)} .fc{font-size:13px;margin:4px 0} footer{margin-top:28px}
+</style></head><body>
+<header><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="ltu-oracle">
+  <rect width="64" height="64" rx="10" fill="#0b0f0c"/>
+  <g fill="#00e05a" opacity="0.28">
+    <rect x="9" y="6" width="3" height="4"/><rect x="9" y="13" width="3" height="4"/><rect x="9" y="20" width="3" height="4"/>
+    <rect x="52" y="34" width="3" height="4"/><rect x="52" y="41" width="3" height="4"/><rect x="52" y="48" width="3" height="4"/><rect x="52" y="55" width="3" height="4"/>
+    <rect x="30.5" y="50" width="3" height="4"/><rect x="30.5" y="57" width="3" height="3"/>
+  </g>
+  <path d="M10 32 Q32 12 54 32 Q32 52 10 32 Z" fill="none" stroke="#00e05a" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="32" cy="32" r="8.5" fill="none" stroke="#00e05a" stroke-width="3"/>
+  <rect x="29" y="27.5" width="6" height="9" fill="#00e05a"/>
+</svg>
+<div><h1>ltu-oracle</h1><div class="dim">Lietuvos atvirų duomenų orakulas: kurios lentelės iš anksto parodo, kas nutiks kitoms</div></div></header>
+<div class="stats"><div><b>400</b><span class="dim">išbandyta rodiklių</span></div>
+<div><b>0</b><span class="dim">rasta modelių</span></div>
+<div><b>0</b><span class="dim">patikrinta prognozių</span></div>
+<div><b>0%</b><span class="dim">pataikė į ± ribas</span></div></div>
+<div class="grid"><p class="dim">Kol kas nieko nerasta.</p></div>
+<footer class="dim">Modelis: metinio pokyčio prognozė iš rodiklio praeities ir iki 5 kitų rodiklių, paslinktų laike (ridge).
+Vertinama tik ateities taškais, kurių modelis nematė; atsitiktinumas tikrinamas permutacijomis ir Benjamini–Hochberg q.
+Koreliacija nėra priežastis: PCMCI ✓ reiškia tik, kad ryšys išlieka atsižvelgus į kitus.</footer>
+</body></html>
